@@ -39,11 +39,9 @@ const Home = (props) => {
             </Head>
             <ColorModeContext.Provider value={colorMode}>
                 <ThemeProvider theme={theme}>
-                    <React.StrictMode>
-                        <CssBaseline/>
-                        <NavBar colorMode={colorMode} mode={mode} theme={theme}/>
-                        <Rides/>
-                    </React.StrictMode>
+                    <CssBaseline/>
+                    <NavBar colorMode={colorMode} mode={mode} theme={theme}/>
+                    <Rides/>
                 </ThemeProvider>
             </ColorModeContext.Provider></>
     );
