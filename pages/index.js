@@ -37,13 +37,14 @@ const Home = (props) => {
             <Head>
                 <title>Routes</title>
             </Head>
-            <ColorModeContext.Provider value={colorMode}>
-                <ThemeProvider theme={theme}>
+            {/*<ColorModeContext.Provider value={colorMode}>
+                <ThemeProvider theme={theme}>*/}
                     <CssBaseline/>
                     <NavBar colorMode={colorMode} mode={mode} theme={theme}/>
                     <Rides/>
-                </ThemeProvider>
-            </ColorModeContext.Provider></>
+                {/*</ThemeProvider>
+            </ColorModeContext.Provider>*/}
+        </>
     );
 };
 
